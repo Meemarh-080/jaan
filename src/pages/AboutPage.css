@@ -1,0 +1,52 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-heading {
+  margin-bottom: 6px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.info-card h3 {
+  margin-top: 0;
+  color: var(--text-heading);
+}
+
+.info-card p {
+  color: var(--text-muted);
+}
+
+.skills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: var(--text-strong);
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

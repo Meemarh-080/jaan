@@ -1,0 +1,108 @@
+:root {
+  --page-bg: #dfeeff;
+  --page-bg-end: #eaf4ff;
+  --surface: rgba(255, 255, 255, 0.78);
+  --surface-card: rgba(255, 255, 255, 0.72);
+  --surface-alt: #f7faff;
+  --surface-nav: #edf5ff;
+  --input-bg: #fff;
+  --border: #dfeaf8;
+  --text: #1f2937;
+  --text-strong: #243447;
+  --text-heading: #1a2433;
+  --text-muted: #3f536a;
+  --accent: #355cdd;
+  --accent-strong: #1f2a44;
+  --accent-soft: rgba(53, 92, 221, 0.15);
+  --success-bg: #edf7ef;
+  --success-text: #1f7a45;
+  --ring-end: #5b7cfa;
+  --code-bg: #edf6ff;
+  color-scheme: light;
+
+  font: 18px/145% system-ui, 'Segoe UI', sans-serif;
+  letter-spacing: 0;
+  color: var(--text);
+  background: var(--page-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme='dark'] {
+  --page-bg: #111923;
+  --page-bg-end: #182433;
+  --surface: rgba(29, 42, 58, 0.96);
+  --surface-card: #202e3e;
+  --surface-alt: #26384b;
+  --surface-nav: #2a3c50;
+  --input-bg: #172331;
+  --border: #3b4d61;
+  --text: #e1e8f0;
+  --text-strong: #dce7f2;
+  --text-heading: #f2f6fb;
+  --text-muted: #bdc9d6;
+  --accent: #a8c0ff;
+  --accent-strong: #35527e;
+  --accent-soft: rgba(168, 192, 255, 0.24);
+  --success-bg: #1d3a31;
+  --success-text: #9cddb9;
+  --ring-end: #7899ed;
+  --code-bg: #26384b;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--page-bg) 0%, var(--page-bg-end) 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-heading);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-heading);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}

@@ -18,7 +18,7 @@ function ContactPage() {
 
         <form
           className="contact-form"
-          action="https://formsubmit.co/muhammaedhapsat20@gmail.com"
+          action='https://formspree.io/f/mvkzdlyd'
           method="POST"
         >
           <input type="hidden" name="_subject" value="New portfolio contact message" />

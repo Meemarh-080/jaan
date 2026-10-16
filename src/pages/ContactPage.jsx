@@ -9,12 +9,7 @@ function ContactPage() {
       </div>
 
       <div className="contact-grid">
-        <div className="contact-card">
-          <h3>Contact details</h3>
-          <p>Email: muhammaedhapsat20@gmail.com</p>
-          <p>Role: Front-end Web Developer</p>
-          <p>Learning and developing simple, modern websites.</p>
-        </div>
+        
 
         <form
           className="contact-form"

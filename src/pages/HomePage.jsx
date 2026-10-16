@@ -1,3 +1,4 @@
+import profileImage from '../assets/IMG_5113.PNG'
 import './HomePage.css'
 
 function HomePage() {
@@ -26,7 +27,13 @@ function HomePage() {
       <div className="hero-card">
         <div className="mini-badge">Learning & building</div>
         <div className="profile-ring">
-          <div className="profile-inner">HM</div>
+          <div className="profile-inner">
+            <img
+              src={profileImage}
+              alt="Hapsat Muhammed"
+              className="profile-image"
+            />
+          </div>
         </div>
         <ul>
           <li>
